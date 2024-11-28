@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="es">
+  <head>
+   <link href="estilos.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+
+    <title>Página de menú/Barra de navegación Básica</title>
+  </head>
+  <body>
+    <header>
+    <div class="interior">
+      <a   target="blank">MI SEGURO PERÚ</a>
+      <nav class="navegacion">
+        <ul>
+          <li><a href="index.html" target="blank">Inicio</a></li>
+           <li class="submenu">
+            <a href="" target="blank">Nuestros Servicios</a>
+            <ul class="hijos">
+              <li><a href="segurosctr.html">Seguro SCTR</a></li>
+              <li><a href="segurodesalud.html">Seguro de Salud</a></li>
+              <li><a href="segurohogar.html">Seguro Hogar</a></li>
+              <li><a href="segurosvehiculares.html">Seguros Vehiculares</a></li>
+              <li><a href="segurodevida.html">Seguro de Vida</a></li>
+              <li><a href="segurocar.html">Seguro CAR Y EAR</a></li>
+              <li><a href="segurotrec.html">Seguro TREC</a></li>
+              <li><a href="segurodeviaje.html">Seguro de Viaje</a></li>
+            </ul>
+          </li>
+          <li><a href="nosotros.html" target="blank">Nosotros</a></li>
+          <li class="submenu">
+            <a href="soat.html" target="blank">SOAT</a>
+          </li>
+          <li><a href="" target="blank">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <section>
+  <body>
+    <video width="100%" height="100% " controls >
+        <source src="video/logro.mp4" type="video/mp4">
+    </video>
+
+
+    </section>
+  </body>
+  <style>
+    *{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Open Sans", sans-serif;
+}
+body{
+  background: #FFFFFF;
+}
+header{
+  width: 100%;
+  height: 90px;
+  background-color: #354271;
+}
+
+/* Carrusel de imágenes */
+.carousel-item img {
+    height: 500px;
+    object-fit: cover;
+    filter: brightness(90%);
+}
+.interior{
+  max-width: 100%;
+  padding: 0 10px;
+  margin: auto;
+}
+.logo{
+  float: left;
+  padding: 5px 20px 0;
+}
+.logo img{
+  width: 150px;
+}
+.logo img:hover{
+  transform: scale(1.1);
+}
+.navegacion{
+  float: right;
+  display: flex;
+  align-items: center;
+  min-height: 90px;
+  z-index: 1000;
+}
+.navegacion ul{
+  list-style: none;
+  padding: 0 10px;
+}
+.navegacion ul li{
+  display: inline-block;
+  position: relative;
+  transition: .3s linear;
+  z-index: 1000;
+}
+.navegacion ul li:hover{
+  transform: scale(1.1);
+}
+.navegacion ul li a{
+  color: #ffffff;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 12px 20px;
+  transition: .3s linear;
+}
+.navegacion ul li a:hover{
+  color: #4AB3D2;
+  transform: scale(1.1);
+}
+.navegacion ul li:hover .hijos{
+  display: block;
+}
+.navegacion .submenu .hijos{
+  display: none;
+  background: #0b132b;
+  position: absolute;
+  width: 100%;
+}
+.navegacion .submenu .hijos li{
+  display: block;
+  overflow: hidden;
+  border-bottom: none;
+}
+.navegacion .submenu .hijos li a{
+  display: block;
+}
+article{
+  padding: 20px;
+  text-align: center;
+  color: #CD1310;
+}
+.banner{
+  width: 100%;
+}
+.megaplazachincha{
+  width: 100%;
+}
+.megaplazapisco{
+  width: 100%;
+}
+.malldelsur{
+  width: 100%;
+}
+.plazanorte{
+  width: 100%;
+}
+
+</style>
+</html>

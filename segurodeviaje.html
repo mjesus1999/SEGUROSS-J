@@ -1,0 +1,334 @@
+<!doctype html>
+<html lang="es">
+  <head>
+   <link href="estilos.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+<style>
+    
+    *{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Open Sans", sans-serif;
+}
+body{
+  background: #FFFFFF;
+}
+header{
+  width: 100%;
+  height: 90px;
+  background-color: #354271;
+}
+
+/* Carrusel de imágenes */
+.carousel-item img {
+    height: 500px;
+    object-fit: cover;
+    filter: brightness(90%);
+}
+.interior{
+  max-width: 100%;
+  padding: 0 10px;
+  margin: auto;
+}
+.logo{
+  float: left;
+  padding: 5px 20px 0;
+}
+.logo img{
+  width: 150px;
+}
+.logo img:hover{
+  transform: scale(1.1);
+}
+.navegacion{
+  float: right;
+  display: flex;
+  align-items: center;
+  min-height: 90px;
+  z-index: 1000;
+}
+.navegacion ul{
+  list-style: none;
+  padding: 0 10px;
+}
+.navegacion ul li{
+  display: inline-block;
+  position: relative;
+  transition: .3s linear;
+  z-index: 1000;
+}
+.navegacion ul li:hover{
+  transform: scale(1.1);
+}
+.navegacion ul li a{
+  color: #ffffff;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 12px 20px;
+  transition: .3s linear;
+}
+.navegacion ul li a:hover{
+  color: #4AB3D2;
+  transform: scale(1.1);
+}
+.navegacion ul li:hover .hijos{
+  display: block;
+}
+.navegacion .submenu .hijos{
+  display: none;
+  background: #0b132b;
+  position: absolute;
+  width: 100%;
+}
+.navegacion .submenu .hijos li{
+  display: block;
+  overflow: hidden;
+  border-bottom: none;
+}
+.navegacion .submenu .hijos li a{
+  display: block;
+}
+article{
+  padding: 20px;
+  text-align: center;
+  color: #CD1310;
+}
+.banner{
+  width: 100%;
+}
+.texto-blanco {
+      color: white; /* Color blanco */
+      text-align: left; /* Alinea el texto a la izquierda */
+      width: 100%; /* Asegura que ocupe todo el ancho disponible */
+      margin: 0 auto; /* Centra el bloque si tiene un ancho definido */
+    }
+.megaplazachincha{
+  width: 100%;
+}
+.megaplazapisco{
+  width: 100%;
+}
+.malldelsur{
+  width: 100%;
+}
+.plazanorte{
+  width: 100%;
+}
+</style>
+</html>
+    <title>Página de menú/Barra de navegación Básica</title>
+  </head>
+  <body>
+    <header>
+    <div class="interior">
+   <div class="texto-blanco"><strong>MI SEGURO PERÚ</strong>
+      <nav class="navegacion">
+        <ul>
+          <li><a href="index.html" target="blank">Inicio</a></li>
+           <li class="submenu">
+            <a href="" target="blank">Nuestros Servicios</a>
+            <ul class="hijos">
+              <li><a href="segurosctr.html">Seguro SCTR</a></li>
+              <li><a href="segurodesalud.html">Seguro de Salud</a></li>
+              <li><a href="segurohogar.html">Seguro Hogar</a></li>
+              <li><a href="segurosvehiculares.html">Seguros Vehiculares</a></li>
+              <li><a href="segurodevida.html">Seguro de Vida</a></li>
+              <li><a href="segurocar.html">Seguro CAR Y EAR</a></li>
+              <li><a href="segurotrec.html">Seguro TREC</a></li>
+              <li><a href="segurodeviaje.html">Seguro de Viaje</a></li>
+            </ul>
+          </li>
+          <li><a href="nosotros.html" target="blank">Nosotros</a></li>
+          <li class="submenu">
+            <a href="soat.html" target="blank">SOAT</a>
+          </li>
+          <li><a href="contacto.html" target="blank">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <section>
+        <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f4f4f4;
+        }
+        .container {
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .testimonials {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;  /* Reduje el espacio entre los contenedores */
+            justify-content: space-around;
+        }
+        .testimonial {
+            background: #fff;
+            border-radius: 30px;  /* Esquinas redondeadas */
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            padding: 30px;
+            max-width: 500px;
+            width: 100%;
+            min-height: 400px;
+        }
+        .testimonial img {
+            border-radius: 0;  /* Imagen cuadrada */
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            margin-bottom: 20px;
+        }
+        .testimonial p {
+            margin: 15px 0 0;
+            font-size: 1rem;
+            color: #666;
+        }
+        .testimonial h3 {
+            margin: 10px 0 5px;
+            font-size: 1.5rem;
+            color: #333;
+        }
+        .testimonial h4 {
+            margin: 0;
+            font-size: 1.2rem;
+            color: #999;
+        }
+        .featured-testimonials {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+            margin: 20px auto;
+            text-align: center;
+        }
+
+        .featured-testimonials h2 {
+            margin: 0 0 20px;
+            font-size: 2em;
+            color: #3498db;
+        }
+
+        .featured-testimonials .testimonial {
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            background-color: #f9f9f9;
+        }
+    </style>
+</head>
+ <!-- Banner responsivo -->
+<div class="container-fluid p-0">
+    <img src="img/viaje.jpg" width="100%"alt="Banner Seguros" class="img-fluid">
+</div>
+<body>
+    <div class="container">
+       <h1><p style="color: #233977; text-align: center;"><strong>SEGURO DE VIAJE</strong></p></h1>
+      <p><p style="text-align: center;">El seguro de viaje brinda coberturas integrales, médicas, legales y de equipaje a todo viajero que desee viajar al exterior. En este tipo de seguro, las aseguradoras brindan a través de sus centrales operativas atención al momento del evento, ofreciendo al viajero una protección real al momento de un accidente, enfermedad etc. El Seguro de viaje puede ser de corto plazo, de largo plazo o bien anual, multi-viajes para los viajeros frecuentes. Los mismos poseen coberturas con límites de montos sobre los cuales el viajero utiliza la prestación.</p>
+       
+</body>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<a href="https://api.whatsapp.com/send?phone=%2B51919705540&context=ARD3vSrzOF_FSusa1FICwrh1EudpIpZ3OCQhTZh--UhtwPdGTysXcYiiOvwH_H3exK9L0eCgxxBxGhK7AvQbeAt5gCXDYVNVcMgZbmzr4U72O6eM54QaZ0WT8Y7csP1ojV7He2uExAihMxxfihm0cNj0Bw&source=FB_Page&app=facebook&entry_point=page_cta&fbclid=IwY2xjawGy19hleHRuA2FlbQIxMAABHaXiJENUa0nuXZZwAeTUO5ue1g-_9G_deaESGy3IcKxhJt-hBo4RZI-oAg_aem_YOUFScYYr7av_uO8q4umIw" class="float" target="_blank">
+<i class="fa fa-whatsapp my-float"></i>
+</a>
+  <style>
+    .float{
+  position:fixed;
+  width:80px;
+  height:80px;
+  bottom:60px;
+  right:50px;
+  background-color:#25d366;
+  color:#FFF;
+  border-radius:50px;
+  text-align:center;
+  font-size:50px;
+  box-shadow: 2px 2px 3px #999;
+  z-index:100;
+}
+.float:hover {
+  text-decoration: none;
+  color: #25d366;
+  background-color:#fff;
+}
+
+.my-float{
+  margin-top:16px;
+}
+</style>
+
+</body>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+<!-- Formulario de Contacto -->
+<section id="contact" class="container mt-5 mb-5">
+    <h2 style="color: var(--color-primario);">Contáctenos</h2>
+    <form>
+        <div class="form-group">
+            <label for="name">Nombre</label>
+            <input type="text" class="form-control" id="name" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Correo Electrónico</label>
+            <input type="email" class="form-control" id="email" required>
+        </div>
+        <div class="form-group">
+            <label for="message">Mensaje</label>
+            <textarea class="form-control" id="message" rows="3" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary" style="background-color: var(--color-boton); border-color: var(--color-boton);">Enviar</button>
+    </form>
+</section>
+
+<!-- Footer -->
+<footer class="text-center p-4" style="background-color: var(--color-footer); color: var(--color-texto); margin-top: 2rem;">
+    <p>Síguenos en nuestras redes sociales</p>
+    <a href="https://www.facebook.com/profile.php?id=100064603006050&mibextid=ZbWKwL" class="text-white mr-2"><i class="fab fa-facebook"></i> Facebook</a>
+    <a href="https://www.tiktok.com/@ivanherencia?_t=8r6RyCYW3O9&_r=1" class="text-white mr-2"><i class="fab fa-twitter"></i> TikTok</a>
+</footer>
+
+<!-- JavaScript -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<style>
+    /* Colores principales */
+    :root {
+        --color-primario: #1c2f6f; /* Color de encabezado y footer */
+        --color-footer: #354271; /* Color plomo para el footer */
+        --color-texto: #ffffff; /* Color del texto en header y footer */
+        --color-boton: #39497f; /* Color de los botones */
+    }
+
+    .logo {
+        height: 80px;
+    }
+
+    .navbar .nav-link, .navbar-brand {
+        color: var(--color-texto) !important;
+    }
+
+    .navbar .nav-link:hover, footer a:hover {
+        color: #0fa3d4 !important; /* Color al pasar el mouse */
+    }
+
+    /* Espaciado adicional para el formulario de contacto */
+    #contact {
+        margin-bottom: 3rem;
+    }
+</style>
+
+</html>
